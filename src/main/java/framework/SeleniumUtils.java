@@ -30,7 +30,6 @@ public class SeleniumUtils {
 
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get(url);
-        System.out.println("Url opened in a new tab");
         return driver.getWindowHandle();
     }
 
@@ -39,7 +38,6 @@ public class SeleniumUtils {
         driver.switchTo().newWindow(WindowType.WINDOW);
         driver.get(url);
         driver.manage().window().maximize();
-        System.out.println("Url opened in a new window");
         return driver.getWindowHandle();
     }
 
